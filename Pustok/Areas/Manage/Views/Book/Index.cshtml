@@ -1,0 +1,55 @@
+﻿@using PustokSliderCRUD.Models;
+@model List<Book>
+@{
+    int counter = 0;
+}
+@section cssFiles{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.min.css" />
+}
+<div>
+    <h1>Create Book</h1>
+    <a asp-controller="book" asp-action="create" class="btn btn-primary ">Create</a>
+</div>
+
+<table class="table" style="overflow:scroll;max-width:1000px;">
+    <thead>
+        <tr>
+            <th scope="col">NO</th>
+            <th scope="col">Name</th>
+            <th scope="col">Desc</th>
+            <th scope="col">SalePrice</th>
+            <th scope="col">CostPrice</th>
+            <th scope="col">DiscountPercent</th>
+            <th scope="col">IsAvailable</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            counter++;
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.SalePrice</td>
+                <td>@item.CostPrice</td>
+                <td>@item.DiscountedPrice</td>
+                <td>@item.IsAvailable</td>
+
+                <td>
+                    <a asp-controller="book" asp-action="update" asp-route-id="@item.Id" class="btn btn-primary">Update</a>
+                    <a asp-controller="book" asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger delete-btn">Delete</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+
+@section jsFiles{
+    <script src="~/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.min.js"></script>
+}

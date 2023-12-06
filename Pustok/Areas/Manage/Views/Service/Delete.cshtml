@@ -1,0 +1,18 @@
+﻿@using Pustok.Models;
+
+
+@model Service  
+
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <form method="post">
+            <h5 class="card-title">@Model.Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Description</h6>
+            <p class="card-text">@Model.Logo</p>
+            
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="index" asp-controller="service" class="btn btn-primary">Back to home</a>
+        </form>
+
+    </div>
+</div>

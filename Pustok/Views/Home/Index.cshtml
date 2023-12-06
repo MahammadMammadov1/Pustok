@@ -1,0 +1,146 @@
+﻿@using Pustok.ViewModels;
+
+@model HomeViewModel
+<!--=================================
+       Hero Area
+       ===================================== -->
+<section class="hero-area hero-slider-1">
+    <div class="sb-slick-slider" data-slick-setting='{
+                            "autoplay": true,
+                            "fade": true,
+                            "autoplaySpeed": 3000,
+                            "speed": 3000,
+                            "slidesToShow": 1,
+                            "dots":true
+                            }'>
+        @{
+            int counter = 0;
+        }
+        @foreach (var item in Model.Sliders)
+        {
+            counter++;
+
+            if (counter % 2 == 1)
+            {
+                <div class="single-slide bg-shade-whisper  ">
+                    <div class="container">
+                        <div class="home-content text-center text-sm-left position-relative">
+                            <div class="hero-partial-image image-right">
+                                <img src="~/uploads/sliders/@item.ImageUrl" alt="">
+                            </div>
+                            <div class="row no-gutters ">
+                                <div class="col-xl-6 col-md-6 col-sm-7">
+                                    <div class="home-content-inner content-left-side">
+                                        <h1>
+                                            @item.Title
+                                        </h1>
+                                        <h2>@item.Description</h2>
+                                        <a href="@item.RedirctUrl" class="btn btn-outlined--primary">
+                                            @item.RedirctText
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="single-slide bg-ghost-white">
+                    <div class="container">
+                        <div class="home-content text-center text-sm-left position-relative">
+                            <div class="hero-partial-image image-left">
+                                <img src="~/uploads/sliders/@item.ImageUrl" alt="">
+                            </div>
+                            <div class="row align-items-center justify-content-start justify-content-md-end">
+                                <div class="col-lg-6 col-xl-7 col-md-6 col-sm-7">
+                                    <div class="home-content-inner content-right-side">
+                                        <h1>
+                                            @item.Title
+                                        </h1>
+                                        <h2>@item.Description</h2>
+                                        <a href="@item.RedirctUrl" class="btn btn-outlined--primary">
+                                            @item.RedirctText
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            
+        }
+        
+    </div>
+</section>
+<!--=================================
+Home Features Section
+===================================== -->
+<section class="mb--30">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.Services)
+            {
+                <div class="col-xl-3 col-md-6 mt--30">
+                    <div class="feature-box h-100">
+                        <div class="icon">
+                            <i class="@item.Logo"></i>
+                        </div>
+                        <div class="text">
+                            <h5>@item.Title</h5>
+                            <p> @item.Description</p>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</section>
+
+<!--=================================
+Home Slider Tab
+===================================== -->
+<section class="section-padding">
+    <h2 class="sr-only">Home Tab Slider Section</h2>
+    <div class="container">
+        <div class="sb-custom-tab">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="shop-tab" data-toggle="tab" href="#shop" role="tab"
+                       aria-controls="shop" aria-selected="true">
+                        Featured Products
+                    </a>
+                    <span class="arrow-icon"></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="men-tab" data-toggle="tab" href="#men" role="tab"
+                       aria-controls="men" aria-selected="true">
+                        New Arrivals
+                    </a>
+                    <span class="arrow-icon"></span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="woman-tab" data-toggle="tab" href="#woman" role="tab"
+                       aria-controls="woman" aria-selected="false">
+                       Bestseller Product
+                    </a>
+                    <span class="arrow-icon"></span>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane  active" id="shop" role="tabpanel" aria-labelledby="shop-tab">
+                    @Html.Partial("_BookSliderPartial", Model.FeaturedBooks)
+                </div>
+                <div class="tab-pane" id="men" role="tabpanel" aria-labelledby="men-tab">
+                    @Html.Partial("_BookSliderPartial", Model.NewBooks)
+                </div>
+                <div class="tab-pane" id="woman" role="tabpanel" aria-labelledby="woman-tab">
+                    @Html.Partial("_BookSliderPartial", Model.BestsellerBooks)
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+﻿@using Pustok.Models;
+@model Slider
+
+<div class="container-fluid" >
+    <h1>CREATE SLIDERS</h1>
+</div>
+
+<div class="container-fluid">
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="@Model.Title">Title</label>
+            <input asp-for="@Model.Title" type="text" class="form-control" >
+            <span asp-validation-for="@Model.Title"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Description">Description</label>
+            <input asp-for="@Model.Description" type=" text" class="form-control">
+            <span asp-validation-for="@Model.Description"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.RedirctUrl">RedirctUrl</label>
+            <input asp-for="@Model.RedirctUrl" type="text" class="form-control">
+            <span asp-validation-for="@Model.RedirctUrl"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.RedirctText">RedirctText</label>
+            <input asp-for="@Model.RedirctText" type="text" class="form-control">
+            <span asp-validation-for="@Model.RedirctText"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.FormFile">Image</label>
+            <input asp-for="@Model.FormFile"  class="form-control">
+            <span asp-validation-for="@Model.FormFile"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">CREATE</button>
+    </form>
+
+</div>

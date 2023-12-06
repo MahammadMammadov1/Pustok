@@ -1,0 +1,50 @@
+﻿
+@using Pustok.Models;
+@model List<Service>
+@{
+
+    int counter = 0;
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Create</h1>
+        </div>
+        <div class="col-md-6 text-md-right">
+            <a asp-action="create" asp-controller="service" class="btn btn-primary">Create</a>
+        </div>
+    </div>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Logo</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            counter++;
+
+            <tr>
+                <th scope="row">@counter</th>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.Logo</td>
+                <td>
+                    <a asp-controller="service" asp-action="update" asp-route-id="@item.Id" class="btn btn-primary">Update</a>
+                    <a asp-controller="service" asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

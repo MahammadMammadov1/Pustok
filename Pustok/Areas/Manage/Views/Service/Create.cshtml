@@ -1,0 +1,28 @@
+﻿@using Pustok.Models;
+@model Service
+
+<div class="container-fluid">
+    <h1>CREATE SERVICE</h1>
+</div>
+
+<div class="container-fluid">
+
+    <form method="post">
+        <div class="form-group">
+            <label for="">Title</label>
+            <input asp-for="@Model.Title" type="text" class="form-control">
+
+        </div>
+        <div class="form-group">
+            <label for="">Description</label>
+            <input asp-for="@Model.Description" type=" text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Logo</label>
+            <input asp-for="@Model.Logo" type="text" class="form-control">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">CREATE</button>
+    </form>
+
+</div>
