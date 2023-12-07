@@ -31,7 +31,7 @@ builder.Services.AddSession(opt =>
 });
 
 builder.Services.AddDbContext<AppDbContext>(opt => {
-    opt.UseSqlServer("Server=MSI;Database=MVC-BB206-Crud1;Trusted_Connection=True");
+    opt.UseSqlServer("Server=DESKTOP-0HH3DC0\\SQLEXPRESS;Database=MVC-BB206-Crud1;Trusted_Connection=True");
 
 });
 

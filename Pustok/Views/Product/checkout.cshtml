@@ -222,20 +222,25 @@
 									<div class="row">
 										<!-- Cart Total -->
 										<div class="col-12">
+									@{
+										double grand = 0;
+									}
 											<div class="checkout-cart-total">
 												<h2 class="checkout-title">YOUR ORDER</h2>
 												<h4>Product <span>Total</span></h4>
 												<ul>
 													@foreach (var item in Model)
 											{
+												var totalPrice = (item.Book.SalePrice - (item.Book.SalePrice * item.Book.DiscountedPrice) / 100);
 												<li>
-													<span class="left">@item.Book.Name X @item.Count</span> <span class="right">$@item.Book.SalePrice</span>
+													<span class="left">@item.Book.Name X @item.Count</span> <span class="right">$@totalPrice</span>
 												</li>
+												grand += (double)totalPrice;
 											}
 													
 												</ul>
 												
-												<h4>Grand Total <span>$104.00</span></h4>
+												<h4>Grand Total <span>@grand</span></h4>
 												<div class="method-notice mt--25">
 													<article>
 														<h3 class="d-none sr-only">blog-article</h3>

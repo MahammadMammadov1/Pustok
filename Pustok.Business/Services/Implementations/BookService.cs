@@ -100,7 +100,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok-Last-version\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookPoster.CopyTo(fileStream);
@@ -143,7 +143,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok-Last-version\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookHower.CopyTo(fileStream);
@@ -185,7 +185,7 @@ namespace Pustok.Services.Implementations
 
                     fileName = Guid.NewGuid().ToString() + fileName;
 
-                    string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok-Last-version\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                    string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                     using (FileStream fileStream = new FileStream(path, FileMode.Create))
                     {
                         img.CopyTo(fileStream);
@@ -283,7 +283,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok-Last-version\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookPoster.CopyTo(fileStream);
@@ -322,7 +322,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok-Last-version\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookHower.CopyTo(fileStream);
@@ -364,7 +364,7 @@ namespace Pustok.Services.Implementations
 
                     fileName = Guid.NewGuid().ToString() + fileName;
 
-                    string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok-Last-version\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                    string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                     using (FileStream fileStream = new FileStream(path, FileMode.Create))
                     {
                         img.CopyTo(fileStream);
@@ -391,6 +391,7 @@ namespace Pustok.Services.Implementations
             existBook.IsAvailable = book.IsAvailable;
             existBook.AuthorId = book.AuthorId;
             existBook.GenreId = book.GenreId;
+
 
             await _bookRepository.CommitAsync();
         }

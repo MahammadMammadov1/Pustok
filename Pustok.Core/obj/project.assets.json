@@ -694,7 +694,7 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.Build.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -710,7 +710,7 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.Build.Framework.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -746,12 +746,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -803,12 +803,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -865,12 +865,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Features.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Features.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -925,12 +925,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -988,12 +988,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Features.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Features.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -1059,12 +1059,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -1120,12 +1120,12 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "resource": {
@@ -1195,12 +1195,12 @@
         },
         "compile": {
           "ref/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtimeTargets": {
@@ -1242,12 +1242,12 @@
         },
         "compile": {
           "lib/netstandard1.1/Microsoft.DiaSymReader.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         },
         "runtime": {
           "lib/netstandard1.1/Microsoft.DiaSymReader.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -1650,7 +1650,7 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.NET.StringTools.dll": {
-            "related": ".xml;.pdb"
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -1751,12 +1751,12 @@
         },
         "compile": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
-            "related": ".xml;.runtimeconfig.json"
+            "related": ".runtimeconfig.json;.xml"
           }
         },
         "runtime": {
           "lib/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll": {
-            "related": ".xml;.runtimeconfig.json"
+            "related": ".runtimeconfig.json;.xml"
           }
         }
       },
@@ -10724,19 +10724,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mehemmed\\.nuget\\packages\\": {}
+    "C:\\Users\\II Novbe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
+      "projectUniqueName": "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
       "projectName": "Pustok.Core",
-      "projectPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
-      "packagesPath": "C:\\Users\\Mehemmed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\obj\\",
+      "projectPath": "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
+      "packagesPath": "C:\\Users\\II Novbe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Mehemmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\II Novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
