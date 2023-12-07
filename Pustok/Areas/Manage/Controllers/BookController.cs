@@ -13,7 +13,6 @@ namespace Pustok.Areas.Manage.Controllers
     [Area("Manage")]
     public class BookController : Controller
     {
-        private readonly AppDbContext _appDb;
         private readonly IBookRepository _bookRepository;
         
         private readonly IBookService _bookService;
@@ -29,7 +28,7 @@ namespace Pustok.Areas.Manage.Controllers
             IAuthorRepository authorRepository
             )
         {
-            _appDb = appDb;
+       
             _bookRepository = bookRepository;
             _bookService = bookService;
             _tagRepository = tagRepository;
@@ -60,8 +59,8 @@ namespace Pustok.Areas.Manage.Controllers
 
             try
             {
-                await _bookRepository.CreateAsync(book);    
-                await _appDb.SaveChangesAsync();    
+                await _bookService.Create(book);    
+       
             }
             catch (TotalBookExceptions ex)
             {

@@ -41,11 +41,11 @@ namespace Pustok.Services.Implementations
         public async Task Create(Book book)
         {
             
-            if (!_bookRepository.Table.Any(x => x.Id == book.AuthorId))
+            if (!_authorRepository.Table.Any(x => x.Id == book.AuthorId))
             {
                 throw new TotalBookExceptions("AuthorId", "Author not found!!!");
             }
-            if (!_bookRepository.Table.Any(x => x.Id == book.GenreId))
+            if (!_genreRepository.Table.Any(x => x.Id == book.GenreId))
             {
                 throw new TotalBookExceptions("GenreId", "Genre not found!!!");
                 
@@ -55,8 +55,10 @@ namespace Pustok.Services.Implementations
             {
                 foreach (var tagId in book.TagIds)
                 {
-                    if (!_bookRepository.Table.Any(x => x.Id == tagId))
+                    if (!_tagRepository.Table.Any(x => x.Id == tagId))
                         check = true;
+                    break;
+
                 }
             }
             if (check)
