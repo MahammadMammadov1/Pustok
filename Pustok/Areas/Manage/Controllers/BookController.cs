@@ -99,10 +99,10 @@ namespace Pustok.Areas.Manage.Controllers
             catch (TotalBookExceptions ex)
             {
                 ModelState.AddModelError(ex.Prop, ex.Message);
-                
+                return View();
             }
 
-            await _bookRepository.CommitAsync();
+            
             return RedirectToAction("Index");
         }
        

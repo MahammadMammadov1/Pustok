@@ -114,7 +114,7 @@ namespace Pustok.Controllers
 
            
 
-             basketItemStr = JsonConvert.SerializeObject(basketItems);
+            basketItemStr = JsonConvert.SerializeObject(basketItems);
 
             HttpContext.Response.Cookies.Append("BasketItems", basketItemStr);
 

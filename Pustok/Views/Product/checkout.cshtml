@@ -231,11 +231,11 @@
 												<ul>
 													@foreach (var item in Model)
 											{
-												var totalPrice = (item.Book.SalePrice - (item.Book.SalePrice * item.Book.DiscountedPrice) / 100);
+												double totalPrice = (item.Book.SalePrice - ((item.Book.SalePrice * item.Book.DiscountedPrice) / 100))*item.Count;
 												<li>
 													<span class="left">@item.Book.Name X @item.Count</span> <span class="right">$@totalPrice</span>
 												</li>
-												grand += (double)totalPrice;
+												grand += totalPrice;
 											}
 													
 												</ul>

@@ -234,14 +234,14 @@ namespace Pustok.Services.Implementations
 
         public async Task UpdateAsync(Book book)
         {
-            var existBook = await _bookRepository.GetByIdAsync(x => x.Id == book.Id);
+            var existBook = await _bookRepository.GetByIdAsync(x => x.Id == book.Id, "BookImages", "Author", "Genre", "BookTags.Tag");
             if (existBook == null) throw new NullReferenceException();
-            if (!_bookRepository.Table.Any(x => x.Id == book.AuthorId))
+            if (!_authorRepository.Table.Any(x => x.Id == book.AuthorId))
             {
                 throw new TotalBookExceptions("AuthorId", "Author not found!!!");
                 
             }
-            if (!_bookRepository.Table.Any(x => x.Id == book.GenreId))
+            if (!_genreRepository.Table.Any(x => x.Id == book.GenreId))
             {
                 throw new TotalBookExceptions("GenreId", "Genre not found!!!");
                 
