@@ -38,12 +38,12 @@ namespace Pustok.Business.Services.Implementations
             await tagRepository.CommitAsync();
         }
 
-        public Task<List<Genre>> GetAllAsync()
+        public Task<List<Tag>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<Genre> GetAsync(int id)
+        public Task<Tag> GetAsync(int id)
         {
             throw new NotImplementedException();
         }

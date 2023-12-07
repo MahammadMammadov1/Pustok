@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Pustok.Business.Services.Implementations;
+using Pustok.Business.Services.Interfaces;
 using Pustok.DAL;
 using Pustok.Repositories;
 using Pustok.Repositories.Implementations;
@@ -20,9 +22,13 @@ builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
+builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<IBookTagsRepository, BookTagsRepository>();
 builder.Services.AddScoped<IBookImagesRepository, BookImagesRepository>();
-
+builder.Services.AddSession(opt =>
+{
+    opt.IdleTimeout = TimeSpan.FromSeconds(10);
+});
 
 builder.Services.AddDbContext<AppDbContext>(opt => {
     opt.UseSqlServer("Server=MSI;Database=MVC-BB206-Crud1;Trusted_Connection=True");
@@ -37,7 +43,7 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 
 app.MapControllerRoute(
             name: "areas",

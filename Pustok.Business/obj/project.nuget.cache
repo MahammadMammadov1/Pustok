@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "19Y0y7wlgaYoFwKPvvWcqbgtjK84grMUz13tazXpfQKjBNULY7GZxVFHIset/O5rUvq470QSh3hGhP4gHbrgqQ==",
+  "dgSpecHash": "OgHKT16wdw9jWOBbYSE1l4GG4IxW97Al6X+nqDlAwDLPi30EZFUrxkccHbhe5Gf/0WdJFSehmrBFsrRyspAwQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Business\\Pustok.Business.csproj",
+  "projectFilePath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Business\\Pustok.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mehemmed\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Mehemmed\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

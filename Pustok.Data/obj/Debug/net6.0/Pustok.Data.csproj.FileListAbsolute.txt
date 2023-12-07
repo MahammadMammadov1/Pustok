@@ -32,3 +32,20 @@ C:\Users\Mehemmed\Desktop\New folder (2)\Pustok.Data\obj\Debug\net6.0\refint\Pus
 C:\Users\Mehemmed\Desktop\New folder (2)\Pustok.Data\obj\Debug\net6.0\Pustok.Data.pdb
 C:\Users\Mehemmed\Desktop\New folder (2)\Pustok.Data\obj\Debug\net6.0\Pustok.Data.genruntimeconfig.cache
 C:\Users\Mehemmed\Desktop\New folder (2)\Pustok.Data\obj\Debug\net6.0\ref\Pustok.Data.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\bin\Debug\net6.0\Pustok.Data.deps.json
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\bin\Debug\net6.0\Pustok.Data.runtimeconfig.json
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\bin\Debug\net6.0\Pustok.Data.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\bin\Debug\net6.0\Pustok.Data.pdb
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\bin\Debug\net6.0\Pustok.Core.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\bin\Debug\net6.0\Pustok.Core.pdb
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.csproj.AssemblyReference.cache
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.AssemblyInfoInputs.cache
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.AssemblyInfo.cs
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.csproj.CoreCompileInputs.cache
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.csproj.CopyComplete
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\refint\Pustok.Data.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.pdb
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\Pustok.Data.genruntimeconfig.cache
+C:\Users\Mehemmed\Desktop\Pustok\Pustok.Data\obj\Debug\net6.0\ref\Pustok.Data.dll

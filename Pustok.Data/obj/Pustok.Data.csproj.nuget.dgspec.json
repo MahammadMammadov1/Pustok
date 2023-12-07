@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Data\\Pustok.Data.csproj": {}
+    "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Data\\Pustok.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Core\\Pustok.Core.csproj": {
+    "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Core\\Pustok.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
         "projectName": "Pustok.Core",
-        "projectPath": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Core\\Pustok.Core.csproj",
+        "projectPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
         "packagesPath": "C:\\Users\\Mehemmed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Core\\obj\\",
+        "outputPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mehemmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Data\\Pustok.Data.csproj": {
+    "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Data\\Pustok.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Data\\Pustok.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Data\\Pustok.Data.csproj",
         "projectName": "Pustok.Data",
-        "projectPath": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Data\\Pustok.Data.csproj",
+        "projectPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Data\\Pustok.Data.csproj",
         "packagesPath": "C:\\Users\\Mehemmed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Data\\obj\\",
+        "outputPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mehemmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -107,8 +107,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Core\\Pustok.Core.csproj": {
-                "projectPath": "C:\\Users\\Mehemmed\\Desktop\\New folder (2)\\Pustok.Core\\Pustok.Core.csproj"
+              "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj": {
+                "projectPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj"
               }
             }
           }

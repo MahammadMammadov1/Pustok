@@ -206,10 +206,7 @@ namespace Pustok.Services.Implementations
             await _bookRepository.CommitAsync();
         }
 
-        public Task Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public async Task DeleteAsync(int id)
         {

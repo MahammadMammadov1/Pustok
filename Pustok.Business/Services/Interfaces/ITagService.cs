@@ -11,8 +11,8 @@ namespace Pustok.Business.Services.Interfaces
     {
         Task Create(Tag genre);
         Task Delete(int id);
-        Task<List<Genre>> GetAllAsync();
-        Task<Genre> GetAsync(int id);
+        Task<List<Tag>> GetAllAsync();
+        Task<Tag> GetAsync(int id);
         Task UpdateAsync(Tag genre);
     }
 }
