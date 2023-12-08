@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\Pustok.Core.csproj": {}
+    "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\Pustok.Core.csproj": {
+    "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
         "projectName": "Pustok.Core",
-        "projectPath": "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
-        "packagesPath": "C:\\Users\\II Novbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok.Core\\obj\\",
+        "projectPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\Pustok.Core.csproj",
+        "packagesPath": "C:\\Users\\Mehemmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\II Novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mehemmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

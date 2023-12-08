@@ -102,7 +102,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookPoster.CopyTo(fileStream);
@@ -145,7 +145,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookHower.CopyTo(fileStream);
@@ -187,7 +187,7 @@ namespace Pustok.Services.Implementations
 
                     fileName = Guid.NewGuid().ToString() + fileName;
 
-                    string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                    string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                     using (FileStream fileStream = new FileStream(path, FileMode.Create))
                     {
                         img.CopyTo(fileStream);
@@ -229,9 +229,18 @@ namespace Pustok.Services.Implementations
             throw new NotImplementedException();
         }
 
-        public Task<Book> GetAsync(int id)
+        public async  Task<List<Book>> GetAllRelatedBooksAsync(Book book)
         {
-            throw new NotImplementedException();
+            return await _bookRepository.GetAllAsync(x => x.GenreId == book.GenreId && !x.IsDeleted && x.Id != book.Id, "Author", "BookImages");
+        }
+
+        public async Task<Book> GetAsync(int id)
+        {
+            var entity = await _bookRepository.GetByIdAsync(x => x.Id == id && x.IsDeleted == false, "Author", "BookImages", "BookTags.Tag", "Genre");
+
+            if (entity is null) throw new NullReferenceException();
+
+            return entity;
         }
 
         public async Task UpdateAsync(Book book)
@@ -285,7 +294,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookPoster.CopyTo(fileStream);
@@ -324,7 +333,7 @@ namespace Pustok.Services.Implementations
 
                 fileName = Guid.NewGuid().ToString() + fileName;
 
-                string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                 using (FileStream fileStream = new FileStream(path, FileMode.Create))
                 {
                     book.BookHower.CopyTo(fileStream);
@@ -366,7 +375,7 @@ namespace Pustok.Services.Implementations
 
                     fileName = Guid.NewGuid().ToString() + fileName;
 
-                    string path = "C:\\Users\\II Novbe\\Desktop\\last\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
+                    string path = "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\" + fileName;
                     using (FileStream fileStream = new FileStream(path, FileMode.Create))
                     {
                         img.CopyTo(fileStream);

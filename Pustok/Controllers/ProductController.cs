@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Pustok.Repositories.Interfaces;
+using Pustok.Services;
 using Pustok.ViewModels;
+using PustokSliderCRUD.Models;
 
 namespace Pustok.Controllers
 {
@@ -9,66 +11,86 @@ namespace Pustok.Controllers
     {
 
         private readonly IBookRepository _bookRepository;
+        private readonly IBookService _bookService;
 
-        public ProductController(IBookRepository bookRepository)
+        public ProductController(IBookRepository bookRepository,IBookService bookService)
         {
             _bookRepository = bookRepository;
+            _bookService = bookService;
         }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult SetSession(string name)
+        public async Task<IActionResult> Detail(int id)
         {
-
-            HttpContext.Session.SetString("Name", name);
-
-            return Content("Added");
-        }
-
-        public IActionResult GetSession()
-        {
-            string username= HttpContext.Session.GetString("Name");
-            return Content(username);
-        }
-
-        public IActionResult SetCookie(int id) 
-        {
-            List<int> ids = new List<int>();
-
-            string idsStr = HttpContext.Request.Cookies["UserId"];
-
-            if(idsStr is not null) 
+            Book book = await _bookService.GetAsync(id);
+            ProductDetailViewModel productDetailViewModel = new ProductDetailViewModel()
             {
-                ids = JsonConvert.DeserializeObject<List<int>>(idsStr);
-            }
+                Book = book,
+                ReleatedBooks = await _bookService.GetAllRelatedBooksAsync(book)
+            };
 
-            ids.Add(id);
-
-             idsStr = JsonConvert.SerializeObject(ids);   
-
-            HttpContext.Response.Cookies.Append("UserId", idsStr);
-
-            return Content("Added");
+            return View(productDetailViewModel);
         }
-
-        public IActionResult GetCookie()
+        public async Task<IActionResult> GetBookModal(int id)
         {
+            var book = await _bookService.GetAsync(id);
 
-            List<int> ids = new List<int>();
-
-            string idsIdStr= HttpContext.Request.Cookies["UserId"];
-
-            if(idsIdStr is not null)
-            {
-                ids = JsonConvert.DeserializeObject<List<int>>(idsIdStr);
-            }
-
-            
-
-            return Json(ids);
+            return PartialView("_BookModalPartial", book);
         }
+
+        //public IActionResult SetSession(string name)
+        //{
+
+        //    HttpContext.Session.SetString("Name", name);
+
+        //    return Content("Added");
+        //}
+
+        //public IActionResult GetSession()
+        //{
+        //    string username= HttpContext.Session.GetString("Name");
+        //    return Content(username);
+        //}
+
+        //public IActionResult SetCookie(int id) 
+        //{
+        //    List<int> ids = new List<int>();
+
+        //    string idsStr = HttpContext.Request.Cookies["UserId"];
+
+        //    if(idsStr is not null) 
+        //    {
+        //        ids = JsonConvert.DeserializeObject<List<int>>(idsStr);
+        //    }
+
+        //    ids.Add(id);
+
+        //     idsStr = JsonConvert.SerializeObject(ids);   
+
+        //    HttpContext.Response.Cookies.Append("UserId", idsStr);
+
+        //    return Content("Added");
+        //}
+
+        //public IActionResult GetCookie()
+        //{
+
+        //    List<int> ids = new List<int>();
+
+        //    string idsIdStr= HttpContext.Request.Cookies["UserId"];
+
+        //    if(idsIdStr is not null)
+        //    {
+        //        ids = JsonConvert.DeserializeObject<List<int>>(idsIdStr);
+        //    }
+
+
+
+        //    return Json(ids);
+        //}
 
 
         public IActionResult AddToBasket(int bookId)

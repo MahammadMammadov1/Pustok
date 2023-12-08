@@ -30,10 +30,11 @@ namespace Pustok.Services.Implementations
             await _genreRepository.CommitAsync();
         }
 
-        public Task<List<Genre>> GetAllAsync()
+        public async Task<List<Genre>> GetAllAsync()
         {
-            return _genreRepository.GetAllAsync();
+            return await _genreRepository.GetAllAsync();
         }
+
 
         public async Task<Genre> GetAsync(int id)
         {

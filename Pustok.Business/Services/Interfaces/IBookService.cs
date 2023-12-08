@@ -9,6 +9,7 @@ namespace Pustok.Services
         Task DeleteAsync(int id);
         Task<List<Book>> GetAllAsync();
         Task<Book> GetAsync(int id);
+        Task<List<Book>> GetAllRelatedBooksAsync(Book book);
         Task UpdateAsync(Book book);
         
     }

@@ -8,6 +8,7 @@ using Pustok.Repositories.Interfaces;
 using Pustok.Services;
 using Pustok.Services.Implementations;
 using Pustok.Services.Interfaces;
+using Pustok.ViewService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,13 +26,14 @@ builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<IBookTagsRepository, BookTagsRepository>();
 builder.Services.AddScoped<IBookImagesRepository, BookImagesRepository>();
+builder.Services.AddScoped<LayoutService>();
 builder.Services.AddSession(opt =>
 {
     opt.IdleTimeout = TimeSpan.FromSeconds(10);
 });
 
 builder.Services.AddDbContext<AppDbContext>(opt => {
-    opt.UseSqlServer("Server=DESKTOP-0HH3DC0\\SQLEXPRESS;Database=MVC-BB206-Crud1;Trusted_Connection=True");
+    opt.UseSqlServer("Server=MSI;Database=MVC-BB206-Crud1;Trusted_Connection=True");
 
 });
 

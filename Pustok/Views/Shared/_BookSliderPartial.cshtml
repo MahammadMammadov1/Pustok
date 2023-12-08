@@ -22,7 +22,7 @@
                         @book.Author.Name
                     </a>
                     <h3>
-                        <a href="product-details.html">
+                        <a asp-action="detail" asp-controller="product" asp-route-id="@book.Id">
                             @book.Name
                         </a>
                     </h3>
