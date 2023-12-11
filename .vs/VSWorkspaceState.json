@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pustok",
+    "\\Pustok\\Views",
+    "\\Pustok\\Views\\Shared"
   ],
-  "SelectedNode": "\\Pustok.sln",
+  "SelectedNode": "\\Pustok\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

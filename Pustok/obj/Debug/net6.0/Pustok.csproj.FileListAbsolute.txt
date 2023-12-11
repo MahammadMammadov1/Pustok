@@ -2014,3 +2014,8 @@ C:\Users\II Novbe\Desktop\last\Pustok\Pustok\obj\Debug\net6.0\refint\Pustok.dll
 C:\Users\II Novbe\Desktop\last\Pustok\Pustok\obj\Debug\net6.0\Pustok.pdb
 C:\Users\II Novbe\Desktop\last\Pustok\Pustok\obj\Debug\net6.0\Pustok.genruntimeconfig.cache
 C:\Users\II Novbe\Desktop\last\Pustok\Pustok\obj\Debug\net6.0\ref\Pustok.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Mehemmed\Desktop\Pustok\Pustok\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

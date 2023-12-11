@@ -7,5 +7,6 @@ namespace Pustok.ViewModels
     {
         public List<Genre> Genres { get; set; }
         public List<Setting> Settings { get; set; }
+        public List<AppUser> AppUsers { get; set; } 
     }
 }

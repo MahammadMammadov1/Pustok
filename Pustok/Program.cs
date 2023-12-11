@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Pustok.Business.Services.Implementations;
 using Pustok.Business.Services.Interfaces;
+using Pustok.Core.Models;
 using Pustok.DAL;
 using Pustok.Repositories;
 using Pustok.Repositories.Implementations;
@@ -37,15 +39,32 @@ builder.Services.AddDbContext<AppDbContext>(opt => {
 
 });
 
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+{
+    opt.Password.RequiredUniqueChars = 0;
+    opt.Password.RequiredLength = 8;
+    opt.Password.RequireDigit = true;
+    opt.Password.RequireLowercase = true;
+    opt.Password.RequireUppercase = true;
+    opt.Password.RequireNonAlphanumeric = true;
+
+    opt.User.RequireUniqueEmail = false;
+    
+}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
 
 
 var app = builder.Build();
 
 
-
+app.UseRouting();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSession();
+app.UseAuthentication();
+app.UseAuthorization();
+
+
 
 app.MapControllerRoute(
             name: "areas",
