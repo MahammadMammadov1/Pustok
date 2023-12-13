@@ -11,5 +11,7 @@ namespace Pustok.Core.Models
     {
         public string FullName { get; set; }
         public string BirthDate { get; set; }
+        
+        public List<Order> Order { get; set; }
     }
 }

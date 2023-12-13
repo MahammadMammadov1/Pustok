@@ -2,9 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\Pustok",
+    "\\Pustok\\Areas",
+    "\\Pustok\\Areas\\Manage",
+    "\\Pustok\\Areas\\Manage\\Controllers",
+    "\\Pustok\\Areas\\Manage\\Views",
+    "\\Pustok\\Areas\\Manage\\Views\\Shared",
     "\\Pustok\\Views",
     "\\Pustok\\Views\\Shared"
   ],
-  "SelectedNode": "\\Pustok\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\Pustok.sln",
   "PreviewInSolutionExplorer": false
 }

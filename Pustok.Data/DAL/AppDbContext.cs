@@ -12,6 +12,8 @@ namespace Pustok.DAL
         {
 
         }
+        
+
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Book> Books { get; set; }
@@ -22,6 +24,9 @@ namespace Pustok.DAL
         public DbSet<BookImage> BookImages { get; set; }
         public DbSet<Setting> Settings { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
     }
 }
