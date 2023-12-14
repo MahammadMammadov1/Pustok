@@ -25,11 +25,17 @@ namespace Pustok.ViewService
 
         public async Task<AppUser> GetAppUser() 
         {
-            string name = _httpContextAccessor.HttpContext.User.Identity.Name;
-            AppUser user  =await _userManager.FindByNameAsync(name);
+			AppUser user = null;
+			
+			if (_httpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
+			{
+				user = await _userManager.FindByNameAsync(_httpContextAccessor.HttpContext.User.Identity.Name);
+				
+			}
 
-            return user;
-        }
+			return user;
+		}
+	}
 
     }
-}
+

@@ -209,7 +209,7 @@
                             <div class="login-block">
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                    <p>Xoş geldiniz, @User.Identity.Name</p>
+                                    <a asp-action="profile" asp-controller="account">Xoş geldiniz, @User.Identity.Name</a>
                                     
                                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
@@ -269,7 +269,7 @@
                                             <a href="cart.html" class="btn">
                                                 View Cart <i class="fas fa-chevron-right"></i>
                                             </a>
-                                            <a href="checkout.html" class="btn btn--primary">
+                                            <a asp-action="checkout" asp-controller="product" class="btn btn--primary">
                                                 Check Out <i class="fas fa-chevron-right"></i>
                                             </a>
                                         </div>

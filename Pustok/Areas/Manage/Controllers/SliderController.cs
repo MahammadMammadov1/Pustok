@@ -47,10 +47,7 @@ namespace Pustok.Areas.Manage.Controllers
                 ModelState.AddModelError(ex.Prop,ex.Message);
                 return View();
             }
-            catch (Exception)
-            {
-
-            }
+            
 
             return RedirectToAction("Index");
         }

@@ -7,9 +7,10 @@
     "\\Pustok\\Areas\\Manage\\Controllers",
     "\\Pustok\\Areas\\Manage\\Views",
     "\\Pustok\\Areas\\Manage\\Views\\Shared",
+    "\\Pustok\\Controllers",
     "\\Pustok\\Views",
     "\\Pustok\\Views\\Shared"
   ],
-  "SelectedNode": "\\Pustok.sln",
+  "SelectedNode": "\\Pustok\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

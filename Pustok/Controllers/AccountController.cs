@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Pustok.Areas.ViewModels;
 using Pustok.Core.Models;
+using Pustok.DAL;
 using Pustok.Migrations;
 using Pustok.ViewModels;
 
@@ -13,14 +16,17 @@ namespace Pustok.Controllers
 		private readonly UserManager<AppUser> _userManager;
 		private readonly RoleManager<IdentityRole> _roleManager;
 		private readonly SignInManager<AppUser> _signInManager;
+		private readonly AppDbContext _appDb;
 
 		public AccountController(UserManager<AppUser> userManager,
             RoleManager<IdentityRole > roleManager,
-			SignInManager<AppUser> signInManager)
+			SignInManager<AppUser> signInManager,
+			AppDbContext appDb)
         {
 			_userManager = userManager;
 			_roleManager = roleManager;
 			_signInManager = signInManager;
+			_appDb = appDb;
 		}
         public IActionResult Index()
         {
@@ -108,5 +114,20 @@ namespace Pustok.Controllers
             HttpContext.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
-    }
+
+		[Authorize(Roles = "SuperAdmin,Admin,Member")]
+		public async Task<IActionResult> Profile()
+		{
+			AppUser appUser = null;
+
+			if (HttpContext.User.Identity.IsAuthenticated)
+			{
+				appUser = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+			}
+
+			List<Order> orders = await _appDb.Orders.Where(x => x.AppUserId == appUser.Id).ToListAsync();
+
+			return View(orders);
+		}
+	}
 }

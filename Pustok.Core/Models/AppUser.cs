@@ -13,5 +13,6 @@ namespace Pustok.Core.Models
         public string BirthDate { get; set; }
         
         public List<Order> Order { get; set; }
+        public List<BasketItem> BasketItems { get; set; }
     }
 }

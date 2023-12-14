@@ -1,4 +1,5 @@
-﻿using Pustok.Models;
+﻿using Pustok.Core.Enums;
+using Pustok.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Pustok.Core.Models
         public string? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
         public double TotalProce { get; set; }
+        public OrderStatus OrderStatus { get; set; }
         public List<OrderItem> OrderItems { get; set; }
 
     }
