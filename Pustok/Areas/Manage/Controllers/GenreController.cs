@@ -60,7 +60,7 @@ namespace PustokSliderCRUD.Areas.Manage.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             if (id == null) return NotFound();
 
@@ -70,7 +70,7 @@ namespace PustokSliderCRUD.Areas.Manage.Controllers
             //_appDb.Genres.Remove(genre);
             //_appDb.SaveChanges();
 
-            _genreService.Delete(id);
+            await _genreService.Delete(id);
 
             return Ok();
         }

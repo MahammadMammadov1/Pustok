@@ -23,11 +23,13 @@ namespace Pustok.Services.Implementations
 
         public async Task Delete(int id)
         {
-            var entity =await  _genreRepository.GetByIdAsync(x => x.Id == id && x.IsDeleted ==false);
+            Genre entity =await  _genreRepository.GetByIdAsync(x => x.Id == id && x.IsDeleted ==false);
             if (entity == null) throw new NullReferenceException();
 
             _genreRepository.DeleteAsync(entity);
             await _genreRepository.CommitAsync();
+
+
         }
 
         public async Task<List<Genre>> GetAllAsync()

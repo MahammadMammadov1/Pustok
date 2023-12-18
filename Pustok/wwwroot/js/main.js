@@ -16,7 +16,7 @@ deleteBtns.forEach(delBtn => delBtn.addEventListener("click", (e) => {
         if (result.isConfirmed) {
 
             fetch(url).then(res => {
-                if (res.ok == true) {
+                if (res.status == 200) {
                     window.location.reload(true);
 
                 } else {

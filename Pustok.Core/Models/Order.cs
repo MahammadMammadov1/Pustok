@@ -22,6 +22,7 @@ namespace Pustok.Core.Models
         public double TotalProce { get; set; }
         public OrderStatus OrderStatus { get; set; }
         public List<OrderItem> OrderItems { get; set; }
+        public string? AdminComment { get; set; }
 
     }
 }

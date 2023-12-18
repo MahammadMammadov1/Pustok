@@ -452,13 +452,21 @@
 
         <!-- Custom scrr all pages-->
         <script src="~/js/sb-admin-2.min.js"></script>
-        @RenderSection("jsFiles",required: false);
         <!-- Page levels -->
          <script src="~/vendor/chart.js/Chart.min.js"></script>
 
         <!-- Page level scripts -->
         <script src="~/js/demo/chart-area-demo.js"></script>
         <script src="~/js/demo/chart-pie-demo.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js" integrity="sha512-7rhBJh1om/W5Ztx7WiYOR9h2wlSaTmPyQMoHFtbT/FVNIA12y6S6I8HY9mrBS1uJ3dSU/R3qaSAXsGYuRjMDxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var connection = new signalR.HubConnectionBuilder().withUrl("/chatUrl").build();
+            connection.start();
+
+            console.log(connection)
+
+        </script>
+        @RenderSection("jsFiles",required: false);
 
 </body>
 

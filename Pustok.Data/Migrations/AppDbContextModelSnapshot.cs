@@ -274,6 +274,9 @@ namespace Pustok.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("AdminComment")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("AppUserId")
                         .HasColumnType("nvarchar(450)");
 
@@ -678,6 +681,9 @@ namespace Pustok.Migrations
 
                     b.Property<string>("BirthDate")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CoonectionId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")

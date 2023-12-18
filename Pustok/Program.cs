@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+
 using Pustok.Business.Services.Implementations;
 using Pustok.Business.Services.Interfaces;
 using Pustok.Core.Models;
@@ -11,6 +12,7 @@ using Pustok.Services;
 using Pustok.Services.Implementations;
 using Pustok.Services.Interfaces;
 using Pustok.ViewService;
+using SignalRChat.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,6 +54,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
     
 }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
+builder.Services.AddSignalR();
+
 
 
 var app = builder.Build();
@@ -75,4 +79,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapHub<ChatHub>("/chatUrl");
 app.Run();

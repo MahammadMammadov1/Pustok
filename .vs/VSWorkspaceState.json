@@ -4,13 +4,13 @@
     "\\Pustok",
     "\\Pustok\\Areas",
     "\\Pustok\\Areas\\Manage",
-    "\\Pustok\\Areas\\Manage\\Controllers",
     "\\Pustok\\Areas\\Manage\\Views",
+    "\\Pustok\\Areas\\Manage\\Views\\Order",
     "\\Pustok\\Areas\\Manage\\Views\\Shared",
     "\\Pustok\\Controllers",
     "\\Pustok\\Views",
     "\\Pustok\\Views\\Shared"
   ],
-  "SelectedNode": "\\Pustok\\Controllers\\ProductController.cs",
+  "SelectedNode": "\\Pustok\\Areas\\Manage\\Views\\Order\\Detail.cshtml",
   "PreviewInSolutionExplorer": false
 }

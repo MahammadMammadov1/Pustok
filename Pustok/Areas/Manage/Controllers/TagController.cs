@@ -40,22 +40,22 @@ namespace Pustok.Areas.Manage.Controllers
 
             return RedirectToAction("Index");
         }
-        public IActionResult Update(int id)
+        public async  Task<IActionResult> Update(int id)
         {
-            var wanted = _tagrepo.GetByIdAsync(x => x.Id == id);
+            Tag wanted =await _tagrepo.GetByIdAsync(x => x.Id == id);
             if (wanted == null) return NotFound();
             return View(wanted);
         }
         [HttpPost]
         public async Task<IActionResult> Update(Tag tag)
         {
-            if (ModelState.IsValid) return View(tag);
+            if (!ModelState.IsValid) return View(tag);
             await _tagService.UpdateAsync(tag);
             return RedirectToAction("Index");
         }
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var wanted = _tagrepo.GetByIdAsync(x=>x.Id == id);
+            var wanted =await _tagrepo.GetByIdAsync(x=>x.Id == id);
             if (wanted == null) return NotFound();
             return View(wanted);
         }

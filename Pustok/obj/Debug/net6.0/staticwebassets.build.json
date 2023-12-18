@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dlQ9eo7FZieT5gJv96LOV7P5y7m+ELN5GB3LtMYhwj4=",
+  "Hash": "kh1qr1g8ZgjIWjdr9YL+dmGM3Z+gk+yxMgpVlYhNgS0=",
   "Source": "Pustok",
   "BasePath": "_content/Pustok",
   "Mode": "Default",
@@ -2516,6 +2516,40 @@
       "OriginalItemSpec": "wwwroot\\uploads\\books\\0775cb86-c347-40e9-8268-ff8497af1d64feature-work-4.jpg"
     },
     {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\0ace26bb-963c-4f47-96ad-30484566a0fd51397.jpg",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "uploads/books/0ace26bb-963c-4f47-96ad-30484566a0fd51397.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\books\\0ace26bb-963c-4f47-96ad-30484566a0fd51397.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\0e310b6b-0edf-4b48-b4b3-83fee80d3f2251397.jpg",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "uploads/books/0e310b6b-0edf-4b48-b4b3-83fee80d3f2251397.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\books\\0e310b6b-0edf-4b48-b4b3-83fee80d3f2251397.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\11c14ec5-85c2-461c-929e-af6877fe2dbf1_GoLwqfeB624NB5g7JPVyBA.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
@@ -2856,6 +2890,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\books\\529d4e10-00e2-4f75-bbef-648c5a0b4215product-details-5.jpg"
     },
     {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\54ccf2d6-919a-4200-b5f5-4de26d294bfb51397.jpg",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "uploads/books/54ccf2d6-919a-4200-b5f5-4de26d294bfb51397.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\books\\54ccf2d6-919a-4200-b5f5-4de26d294bfb51397.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\558b382a-1892-4024-b949-9a331a5d54b4product-12.jpg",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
@@ -3026,6 +3077,23 @@
       "OriginalItemSpec": "wwwroot\\uploads\\books\\7b83e792-8d03-4dfd-853d-17f676a77a08n-heroes-download-with-transparent-background-free-thumbnail.png"
     },
     {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\7c99dec9-3e74-4e0f-85c4-c9e162fe612451397.jpg",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "uploads/books/7c99dec9-3e74-4e0f-85c4-c9e162fe612451397.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\books\\7c99dec9-3e74-4e0f-85c4-c9e162fe612451397.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\7e475a3c-9ba4-4298-b537-f14ce22b3c4eScreenshot 2023-11-03 093158.png",
       "SourceId": "Pustok",
       "SourceType": "Discovered",
@@ -3109,6 +3177,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\books\\8c43118b-95e0-4a7c-9744-416efc67a8fb4e6cec6672739cd31912005eeaab26e0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\8e5bc96f-76c2-4819-a92f-22c246082aa051397.jpg",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "uploads/books/8e5bc96f-76c2-4819-a92f-22c246082aa051397.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\books\\8e5bc96f-76c2-4819-a92f-22c246082aa051397.jpg"
     },
     {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\94fef821-3f51-4109-adee-7498215de887899f5dd0c9f47afa052d7fe6c3da12a0-1200x675-1.jpg",
@@ -3619,6 +3704,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\books\\f3798c79-498c-44cf-8ce2-171331195db9899f5dd0c9f47afa052d7fe6c3da12a0-1200x675-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\f518d542-4215-4464-bcf1-f1d3e33286f651397.jpg",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "uploads/books/f518d542-4215-4464-bcf1-f1d3e33286f651397.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\books\\f518d542-4215-4464-bcf1-f1d3e33286f651397.jpg"
     },
     {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\Pustok\\Pustok\\wwwroot\\uploads\\books\\f520b8ec-3376-455e-9639-0b8377b9e56d4e6cec6672739cd31912005eeaab26e0.jpg",
